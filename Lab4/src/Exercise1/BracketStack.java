@@ -37,4 +37,14 @@ public class BracketStack {
         return value;
         // After saving top.data, the new top should be the node that comes after the current top.
     }
+
+    //  TODO 3: Return the top element without removing it
+    public char peek() {
+        // Control if the stack is empty; if it is, then return null
+        // if not return the data of the top
+        if (top == null) {
+            return '\0';
+        }
+        return top.data;
+    }
 }
