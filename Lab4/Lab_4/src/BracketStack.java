@@ -22,4 +22,14 @@ public class BracketStack {
         newNode.next = top;
         top = newNode;
     }
+
+    // TODO 2: Remove and return the top element
+    public char pop(){
+        if(top == null){
+            return '\0';
+        }
+        char value = top.data;
+        top = top.next;
+        return value;
+    }
 }
