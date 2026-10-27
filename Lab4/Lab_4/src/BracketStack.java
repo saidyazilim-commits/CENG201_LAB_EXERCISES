@@ -14,6 +14,12 @@ public class BracketStack {
     public BracketStack(){
         top = null;
     }
-
-
+    // TODO 1: Add an element to the top of the stack
+    public void push(char value){
+        // connect newNode to the current top
+        // update top
+        Node newNode = new Node(value);
+        newNode.next = top;
+        top = newNode;
+    }
 }
