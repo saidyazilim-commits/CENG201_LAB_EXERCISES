@@ -47,4 +47,12 @@ public class BracketStack {
         }
         return top.data;
     }
+
+    //  TODO 4: Check whether the stack is empty
+    public boolean isEmpty() {
+        if (top == null) {
+            return true;
+        }
+        return false;
+    }
 }
