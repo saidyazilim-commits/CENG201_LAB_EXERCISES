@@ -26,4 +26,15 @@ public class BracketStack {
         newNode.next = top;
         top = newNode;
     }
+
+    //  TODO 2: Remove and return the top element
+    public char pop() {
+        if (top == null) {
+            return '\0';
+        }
+        char value = top.data;
+        top = top.next;
+        return value;
+        // After saving top.data, the new top should be the node that comes after the current top.
+    }
 }
