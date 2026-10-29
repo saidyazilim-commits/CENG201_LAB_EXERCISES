@@ -18,7 +18,9 @@ public class ReverseEquationDemo {
         // Print the input and output like in the expected output
         for (String equation : equations) {
             String reversed = EquationReverser.reverseEquation(equation);
-            System.out.println("Input: " + equation + " -> Output: " + reversed);
+            System.out.println("Input:  " + equation);
+            System.out.println("Output: " + reversed);
+            System.out.println();
         }
     }
 }
